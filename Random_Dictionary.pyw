@@ -24,6 +24,7 @@ while True:
         font=("Helvetica", randint(12, 42))
     ))
 
-    canvas.after(10, canvas.update())        
-    for i in range(len(text)-25):
+    canvas.after(10, canvas.update())
+    for i in range(len(text)-25):   # Change this number to set the max list length
         canvas.delete(text[i])
+        del(text[i])
